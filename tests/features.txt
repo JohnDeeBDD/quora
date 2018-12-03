@@ -1,0 +1,12 @@
+itShouldLinkWordPressUsersToQuoraAccountsViaOautOrSomeOtherMeans();
+itShouldInitiateWpCronToPullNewDataFromQuoraWhenUserAccessesTheAdminArea();
+itShouldPullDataFromQuoraViaWpCron();
+  because WP is async, Quora pulls should be stacked one action at a time in WP crons that execute immediately. These will spawn in the background. Similar to the way mass delete actions of performed. 
+adminsShouldBeAbleToMapQuoraQuestionsToTaxonomies();
+	initial options:
+		Quora questios go to CPT
+		Quora questions go to a particular WP taxonomy [i.e. "Quora" WP category]
+itShouldPullTagsFromQuora();
+itShouldStoreQuestionsRequestsAsUnpublishedWpPosts();
+itShouldPushPostsToQuoraOnPublishOrChange();
+itShouldUnPublishQuoraPostsUponUnpublishingLinkedWpPosts();

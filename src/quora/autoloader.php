@@ -1,6 +1,6 @@
 <?php
 
-namespace WPbdd;
+namespace Quora;
 
 function autoload($className){
 	$NS = __NAMESPACE__;

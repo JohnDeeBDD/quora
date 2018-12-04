@@ -23,4 +23,8 @@ class UnitTester extends \Codeception\Actor
    /**
     * Define custom actions here
     */
+    
+    public function __construct(){
+        require_once("//var/www/html/wp-content/plugins/quora/src/quora/autoloader.php");
+    }
 }

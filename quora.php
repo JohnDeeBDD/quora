@@ -12,5 +12,10 @@ namespace Quora;
 
 require_once (plugin_dir_path(__FILE__). 'src/quora/autoloader.php');
 
+//On this page, I only call the plugin class, and each method is directly linked to a "feature"
+//Each "feature" is built with BDD "should sentances", and tested as acceptance tests.
+
 $Plugin = new QuoraPlugin();
+
+// It should have a settings page.
 $Plugin->activateSettingsPage();
